@@ -9,7 +9,7 @@ stdenvNoCC.mkDerivation rec {
   pname = "eorzean-typeface-nerdfont";
   version = "1.051";
 
-  src = fetchurl {
+  src = pkgs.fetchurl {
     url = "https://github.com/karaipsum/Eorzean-Typeface/releases/download/v${version}/AugmentedNeo-Eorzean-Regular.otf";
     hash = "sha256-SeIJ6uQjCeV0IwJoSt557nIHBk1l6J+N7ef7LzS2ugs=";
   };
