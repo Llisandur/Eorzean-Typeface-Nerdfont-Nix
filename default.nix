@@ -1,11 +1,10 @@
 {
   lib,
-  stdenvNoCC,
   pkgs,
-  nerd-font-patcher,
+  ...
 }:
 
-stdenvNoCC.mkDerivation rec {
+pkgs.stdenv.mkDerivation rec {
   pname = "eorzean-typeface-nerdfont";
   version = "1.051";
 
@@ -17,7 +16,7 @@ stdenvNoCC.mkDerivation rec {
   dontUnpack = true;
 
   nativeBuildInputs = [
-    nerd-font-patcher
+    pkgs.nerd-font-patcher
   ];
 
   buildPhase = ''
