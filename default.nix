@@ -1,7 +1,7 @@
 {
   lib,
   stdenvNoCC,
-  fetchurl,
+  pkgs,
   nerd-font-patcher,
 }:
 
